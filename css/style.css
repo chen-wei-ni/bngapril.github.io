@@ -1,0 +1,985 @@
+@charset "UTF-8";
+@import url("fonts.css");
+@import url("animate.css");
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "儷黑 Pro", 微软雅黑, 黑体, "LiHei Pro Medium", "Microsoft YaHei", SimHei, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: .95rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*-- header --*/
+.header {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(90%, transparent));
+  background: linear-gradient(to bottom, black 0%, transparent 90%);
+}
+
+.header .header-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.2rem 0;
+}
+
+.header .header-container .logo {
+  width: 120px;
+  padding: .25rem 0 .5rem 0;
+}
+
+/*--site-main-wrapper START!--*/
+.site-main-wrapper {
+  background-color: #440016;
+}
+
+.site-main-wrapper .pc-mode {
+  position: relative;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/background-bg_01.png") top center no-repeat;
+  background-size: auto 100%, auto;
+  overflow: hidden;
+}
+
+.site-main-wrapper .pc-mode .glow {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/purplelight.png") top center no-repeat;
+  background-size: auto 100%, auto;
+  -webkit-animation: flicker-1 .6s infinite alternate;
+          animation: flicker-1 .6s infinite alternate;
+  mix-blend-mode: screen;
+}
+
+.site-main-wrapper .pc-mode .character {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/character_01.png") top center no-repeat;
+  background-size: auto 100%, auto;
+}
+
+.site-main-wrapper .pc-mode .connect-part {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/float-items.png") top center no-repeat;
+  background-size: auto 100%, auto;
+  -webkit-animation: shine-item 5s infinite both;
+          animation: shine-item 5s infinite both;
+}
+
+.site-main-wrapper .pc-mode .treasure {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/background-treasure_01.png") top center no-repeat;
+  background-size: auto 100%, auto;
+  -webkit-animation: shine 8s infinite both;
+          animation: shine 8s infinite both;
+}
+
+.site-main-wrapper .pc-mode .banner-slogan-cn {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/slogan_cn.png") top center no-repeat;
+  background-size: auto 100%, auto;
+}
+
+.site-main-wrapper .pc-mode .banner-slogan-en {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/slogan_en.png") top center no-repeat;
+  background-size: auto 100%, auto;
+}
+
+.site-main-wrapper .pc-mode .banner-slogan-id {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/slogan_id.png") top center no-repeat;
+  background-size: auto 100%, auto;
+}
+
+.site-main-wrapper .pc-mode .banner-slogan-jp {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/slogan_jp.png") top center no-repeat;
+  background-size: auto 100%, auto;
+}
+
+.site-main-wrapper .pc-mode .banner-slogan-ka {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/slogan_ka.png") top center no-repeat;
+  background-size: auto 100%, auto;
+}
+
+.site-main-wrapper .pc-mode .banner-slogan-th {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/slogan_th.png") top center no-repeat;
+  background-size: auto 100%, auto;
+}
+
+.site-main-wrapper .pc-mode .banner-slogan-tw {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/slogan_tw.png") top center no-repeat;
+  background-size: auto 100%, auto;
+}
+
+.site-main-wrapper .pc-mode .banner-slogan-vn {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/events/slogan_vn.png") top center no-repeat;
+  background-size: auto 100%, auto;
+}
+
+/** -- prize-- **/
+.prize-box {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -18rem;
+}
+
+.prize-box .treasure-container {
+  width: 1170px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 20px #ff6970;
+          box-shadow: inset 0 0 20px #ff6970;
+  background: linear-gradient(120deg, #7f0c38 0%, #be1263 43%, #a51d59 60%, #680f38 100%);
+}
+
+.prize-box .treasure-container .treasure-img {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  margin-left: .5vw;
+}
+
+.prize-box .treasure-container .treasure-img .inner-img {
+  position: absolute;
+  width: 390px;
+  left: 2%;
+}
+
+.prize-box .treasure-container .treasure-img .inner-img:nth-child(1) {
+  z-index: 10;
+  mix-blend-mode: screen;
+  -webkit-animation: flicker-2 3s infinite;
+          animation: flicker-2 3s infinite;
+}
+
+.prize-box .treasure-container .text-prize {
+  display: inline-block;
+  width: 70%;
+  position: relative;
+  text-align: center;
+  left: 32%;
+  padding: 1.5rem 0 .5rem 0;
+}
+
+.prize-box .treasure-container .text-prize .prize {
+  padding-right: 3rem;
+}
+
+.prize-box .treasure-container .text-prize h4 {
+  font-size: 2rem;
+  font-weight: normal;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffd30f));
+  background: linear-gradient(to bottom, #ffffff, #ffd30f);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  margin: 0 0 -1rem 0;
+}
+
+.prize-box .treasure-container .text-prize h2 {
+  font-size: 8rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff04b), to(#ffa600));
+  background: linear-gradient(to bottom, #fff04b, #ffa600);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  margin: 0;
+  letter-spacing: -2px;
+  -webkit-filter: drop-shadow(0, 0, 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0, 0, 5px rgba(0, 0, 0, 0.5));
+  -webkit-animation: fuyofuyo 2s infinite both;
+          animation: fuyofuyo 2s infinite both;
+}
+
+/*-- 指定遊戲--*/
+.chosed-game {
+  top: -10rem;
+}
+
+.square {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.square h2 {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffeb00));
+  background: linear-gradient(to bottom, #ffffff, #ffeb00);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  font-size: 3.8rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.square .part {
+  width: 1170px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 20px #ff6970;
+          box-shadow: inset 0 0 20px #ff6970;
+  background: linear-gradient(120deg, #7f0c38 0%, #be1263 43%, #a51d59 60%, #680f38 100%);
+  padding: 2.5rem 1.8rem;
+}
+
+.square .part .select-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.square .part .select-game .each-game {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.square .part .select-game .each-game a:hover .pic {
+  -webkit-filter: contrast(120%) brightness(120%) drop-shadow(1px 1px 10px rgba(255, 51, 187, 0.5));
+          filter: contrast(120%) brightness(120%) drop-shadow(1px 1px 10px rgba(255, 51, 187, 0.5));
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.square .part .select-game .pic {
+  width: 92%;
+  margin: 0 auto;
+  -webkit-box-shadow: -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent, 0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+          box-shadow: -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent, 0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+}
+
+.square .part .select-game p {
+  margin: .5rem 0;
+}
+
+.square .part .others-game {
+  padding-top: 2rem;
+}
+
+.square .part .others-game p {
+  color: #fff;
+  line-height: 2;
+  font-size: .85rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1.5rem auto;
+  padding: 0 2rem;
+}
+
+.square .part .others-game p a {
+  margin: 0 .5rem;
+}
+
+.square .part .others-game p a:hover {
+  opacity: 0.5;
+}
+
+.square .part .others-game .line {
+  width: 100%;
+  height: 1.5px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, transparent), color-stop(50%, #ffffff), color-stop(95%, transparent));
+  background: linear-gradient(to right, transparent 5%, #ffffff 50%, transparent 95%);
+}
+
+/*--活動細節--*/
+.event {
+  top: -5rem;
+}
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.details .word {
+  -ms-flex-preferred-size: 54%;
+      flex-basis: 54%;
+  padding-right: 2rem;
+}
+
+.details .word ul {
+  color: #fff;
+}
+
+.details .word ul li {
+  margin: .5rem 0;
+  line-height: 1.8;
+}
+
+.details .word ul li span {
+  color: #fff700;
+}
+
+.details ol {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.details ol li::before {
+  content: '\25CB';
+  width: 5px;
+  height: 5px;
+  color: #fff700;
+  display: inline-block;
+  padding-right: .5rem;
+}
+
+.details .decorate-img {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  -webkit-animation: shine-item 5s infinite both;
+          animation: shine-item 5s infinite both;
+}
+
+.table {
+  width: 100%;
+  padding: 1rem 2.5rem 0 2.5rem;
+}
+
+.table ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.table ul li:nth-child(1) {
+  border: none;
+  background-color: transparent !important;
+}
+
+.table ul li:nth-child(odd) span {
+  background-color: rgba(0, 0, 0, 0.28);
+}
+
+.table ul li span {
+  display: block;
+  color: #fff;
+  padding: .8rem 0;
+}
+
+.table ul li span:nth-child(1) {
+  width: 30%;
+  margin-right: 3px;
+}
+
+.table ul li span:nth-child(2) {
+  width: 70%;
+}
+
+.table ul .colored span {
+  color: #ffffff;
+  padding: .7rem 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.table ul .colored span:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffebff), color-stop(27%, #ec36c3), to(transparent));
+  background: linear-gradient(180deg, #ffebff 0%, #ec36c3 27%, transparent 100%);
+  border-radius: 20px 20px 0 0;
+}
+
+.table ul .colored span:nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffebff), color-stop(27%, #ec36c3), to(transparent));
+  background: linear-gradient(180deg, #ffebff 0%, #ec36c3 27%, transparent 100%);
+  border-radius: 20px 20px 0 0;
+}
+
+.annoucement {
+  background-color: #5c1026;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0 0 0;
+}
+
+.annoucement .desc {
+  width: 1170px;
+  color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 4rem;
+}
+
+.annoucement .desc .title {
+  margin-top: .8rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.annoucement .desc ul {
+  margin: 0 0 0 2.5rem;
+}
+
+.annoucement .desc ul li {
+  margin: .8rem 0;
+}
+
+/*-- footer--*/
+.footer {
+  background: url("../images/events/bottom.png") top center no-repeat;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+}
+
+/*-- language --*/
+.language-pack {
+  position: fixed;
+  top: 5rem;
+  right: 0;
+}
+
+.language-pack > span {
+  display: block;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd30f), color-stop(80%, #ffba26), to(#ec6104));
+  background: linear-gradient(180deg, #ffd30f 0%, #ffba26 80%, #ec6104 100%);
+  border-radius: 2px;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.language-pack > span img {
+  -webkit-filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+.language-pack ul {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd30f), color-stop(80%, #ffba26), to(#ec6104));
+  background: linear-gradient(180deg, #ffd30f 0%, #ffba26 80%, #ec6104 100%);
+  margin-right: 3.5rem;
+  padding: .6rem 0 0 .6rem;
+  border-radius: 2px;
+}
+
+.language-pack ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3d0909;
+  padding: 0 .5rem 1rem 0;
+}
+
+.language-pack ul li a:hover {
+  -webkit-filter: contrast(200%);
+          filter: contrast(200%);
+  -webkit-transform: translate(-5px);
+          transform: translate(-5px);
+}
+
+.language-pack ul li a span {
+  display: block;
+  width: 36px;
+  margin-right: .25rem;
+}
+
+.top_btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.top_btn span {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.7);
+  display: block;
+  border-radius: 50%;
+  padding: 1.6rem 1.4rem;
+}
+
+/*--switch another mode --*/
+@media screen and (max-width: 1600px) {
+  .site-main-wrapper .pc-mode {
+    height: 920px;
+  }
+  .site-main-wrapper .pc-mode .glow, .site-main-wrapper .pc-mode .character, .site-main-wrapper .pc-mode .treasure, .site-main-wrapper .pc-mode .banner-slogan-cn, .site-main-wrapper .pc-mode .banner-slogan-en, .site-main-wrapper .pc-mode .banner-slogan-id, .site-main-wrapper .pc-mode .banner-slogan-jp, .site-main-wrapper .pc-mode .banner-slogan-ka, .site-main-wrapper .pc-mode .banner-slogan-th, .site-main-wrapper .pc-mode .banner-slogan-tw, .site-main-wrapper .pc-mode .banner-slogan-vn, .site-main-wrapper .pc-mode .connect-part {
+    height: 920px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .site-main-wrapper .pc-mode {
+    height: 700px;
+  }
+  .site-main-wrapper .pc-mode .glow, .site-main-wrapper .pc-mode .character, .site-main-wrapper .pc-mode .treasure, .site-main-wrapper .pc-mode .banner-slogan-cn, .site-main-wrapper .pc-mode .banner-slogan-en, .site-main-wrapper .pc-mode .banner-slogan-id, .site-main-wrapper .pc-mode .banner-slogan-jp, .site-main-wrapper .pc-mode .banner-slogan-ka, .site-main-wrapper .pc-mode .banner-slogan-th, .site-main-wrapper .pc-mode .banner-slogan-tw, .site-main-wrapper .pc-mode .banner-slogan-vn, .site-main-wrapper .pc-mode .connect-part {
+    height: 700px;
+  }
+  .prize-box {
+    top: -10rem;
+  }
+  .prize-box .treasure-container {
+    width: 960px;
+  }
+  .prize-box .treasure-container .text-prize {
+    left: 27%;
+  }
+  .prize-box .treasure-container .text-prize h2 {
+    font-size: 7.5rem;
+  }
+  .prize-box .treasure-container .text-prize .prize {
+    padding: 0;
+  }
+  .chosed-game {
+    top: -8rem;
+  }
+  .square {
+    margin-top: 3rem;
+  }
+  .square .part {
+    width: 960px;
+  }
+  .pic {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .site-main-wrapper .pc-mode {
+    height: 580px;
+  }
+  .site-main-wrapper .pc-mode .glow, .site-main-wrapper .pc-mode .character, .site-main-wrapper .pc-mode .treasure, .site-main-wrapper .pc-mode .banner-slogan-cn, .site-main-wrapper .pc-mode .banner-slogan-en, .site-main-wrapper .pc-mode .banner-slogan-id, .site-main-wrapper .pc-mode .banner-slogan-jp, .site-main-wrapper .pc-mode .banner-slogan-ka, .site-main-wrapper .pc-mode .banner-slogan-th, .site-main-wrapper .pc-mode .banner-slogan-tw, .site-main-wrapper .pc-mode .banner-slogan-vn, .site-main-wrapper .pc-mode .connect-part {
+    height: 580px;
+  }
+  .prize-box {
+    top: -8rem;
+  }
+  .prize-box .treasure-container {
+    width: 820px;
+  }
+  .prize-box .text-prize h2 {
+    font-size: 6.5rem;
+  }
+  .prize-box .treasure-img {
+    padding: 1rem 0 0 2rem;
+  }
+  .prize-box .treasure-container .treasure-img .inner-img {
+    width: 290px;
+    top: 1rem;
+  }
+  .prize-box .treasure-container .text-prize {
+    left: 28%;
+    padding: .5rem .5rem .5rem 0;
+  }
+  .prize-box .treasure-container .text-prize h2 {
+    font-size: 5.2rem;
+  }
+  .chosed-game {
+    top: -6rem;
+  }
+  .square h2 {
+    font-size: 3rem;
+  }
+  .square .part {
+    width: 820px;
+  }
+  .event {
+    top: -4rem;
+  }
+  .details .decorate-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .annoucement .desc .title {
+    min-width: 6rem;
+  }
+  .footer {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .site-main-wrapper .pc-mode {
+    height: 475px;
+  }
+  .site-main-wrapper .pc-mode .glow, .site-main-wrapper .pc-mode .character, .site-main-wrapper .pc-mode .treasure, .site-main-wrapper .pc-mode .banner-slogan-cn, .site-main-wrapper .pc-mode .banner-slogan-en, .site-main-wrapper .pc-mode .banner-slogan-id, .site-main-wrapper .pc-mode .banner-slogan-jp, .site-main-wrapper .pc-mode .banner-slogan-ka, .site-main-wrapper .pc-mode .banner-slogan-th, .site-main-wrapper .pc-mode .banner-slogan-tw, .site-main-wrapper .pc-mode .banner-slogan-vn, .site-main-wrapper .pc-mode .connect-part {
+    height: 475px;
+  }
+  .prize-box {
+    top: -5rem;
+  }
+  .prize-box .treasure-container {
+    width: 670px;
+  }
+  .prize-box .treasure-container .treasure-img {
+    width: 318px;
+    left: -3%;
+  }
+  .prize-box .text-prize {
+    padding: 2.5rem 2rem .5rem 0;
+  }
+  .prize-box .text-prize h2 {
+    font-size: 6.2rem;
+  }
+  .chosed-game {
+    top: -3rem;
+  }
+  .square .part {
+    width: 670px;
+  }
+  .details .word {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pc-mode .background {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-main-wrapper {
+    height: 100%;
+  }
+  .site-main-wrapper .pc-mode {
+    position: relative;
+    width: 100%;
+    height: 95vw;
+  }
+  .site-main-wrapper .pc-mode .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_bg.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .site-main-wrapper .pc-mode .glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_glow.png") top center no-repeat;
+    background-size: 130% 100%;
+  }
+  .site-main-wrapper .pc-mode .character {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_character.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .site-main-wrapper .pc-mode .connect-part {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/float-items-mb.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .site-main-wrapper .pc-mode .treasure {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_treasure.png") top center no-repeat;
+    background-size: 100%;
+    -webkit-animation: shine-mb 8s infinite both;
+            animation: shine-mb 8s infinite both;
+  }
+  .site-main-wrapper .pc-mode .banner-slogan-cn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_slogan-cn.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .site-main-wrapper .pc-mode .banner-slogan-en {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_slogan-en.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .site-main-wrapper .pc-mode .banner-slogan-id {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_slogan-id.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .site-main-wrapper .pc-mode .banner-slogan-jp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_slogan-jp.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .site-main-wrapper .pc-mode .banner-slogan-ka {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_slogan-ka.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .site-main-wrapper .pc-mode .banner-slogan-th {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_slogan-th.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .site-main-wrapper .pc-mode .banner-slogan-tw {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_slogan-tw.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .site-main-wrapper .pc-mode .banner-slogan-vn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/events/mb_slogan-vn.png") top center no-repeat;
+    background-size: 100%;
+  }
+  .prize-box {
+    display: block;
+  }
+  .prize-box .treasure-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5px;
+    overflow: hidden;
+  }
+  .prize-box .treasure-container .treasure-img {
+    width: 100%;
+    left: initial;
+    padding: 1rem 0 2rem 2rem;
+    margin: 0;
+  }
+  .prize-box .treasure-container .treasure-img .inner-img {
+    width: 250px;
+    position: relative;
+    margin: 0 auto;
+    left: initial;
+  }
+  .prize-box .treasure-container .treasure-img .inner-img:nth-child(1) {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-animation: treasure-bling 2s infinite both;
+            animation: treasure-bling 2s infinite both;
+  }
+  .prize-box .treasure-container .text-prize {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    left: inherit;
+  }
+  .prize-box .treasure-container .text-prize h2 {
+    font-size: 4.3rem;
+    letter-spacing: -3px;
+  }
+  .prize-box .treasure-container .text-prize h4 {
+    margin: 0 0 -5px 0;
+  }
+  .square .part {
+    width: 100%;
+    padding: 1.2rem 1rem;
+  }
+  .prize-box, .chosed-game, .event {
+    top: initial;
+  }
+  .main {
+    position: relative;
+    margin: 0 .5rem;
+  }
+  .prize-box .treasure-img-mb {
+    width: 65%;
+    margin: 2rem auto 0 auto;
+  }
+  .prize-box .text-prize {
+    padding: .5rem 0;
+  }
+  .square {
+    margin-top: 2.5rem;
+  }
+  .square h2 {
+    font-size: 2.5rem;
+  }
+  .square .part .select-game {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .square .part .select-game p {
+    margin: .5rem 0 1.5rem 0;
+  }
+  .square .part .others-game {
+    padding-top: 1rem;
+  }
+  .square .part .others-game p {
+    padding: 0;
+  }
+  .details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .details .word ul li {
+    line-height: 1.5;
+  }
+  .details .decorate-img {
+    width: 28%;
+    margin: 0 auto;
+    position: absolute;
+    right: 1rem;
+    bottom: 50%;
+  }
+  .table {
+    padding: 0;
+  }
+  .annoucement .desc {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .annoucement .desc ul {
+    margin: 0;
+  }
+  .annoucement .desc ul li {
+    margin: 1rem 0;
+    line-height: 1.8;
+  }
+  .header .header-container {
+    padding: .25rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .header .header-container .logo {
+    width: 80px;
+    margin: 10px;
+    padding: 0;
+  }
+  .language-pack > span {
+    width: 36px;
+  }
+  .language-pack ul {
+    margin-right: 2.5rem;
+  }
+  .top_btn span {
+    padding: 1.1rem .8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .prize-box .treasure-container .treasure-img .inner-img {
+    width: 210px;
+  }
+  .prize-box .treasure-container .text-prize h2 {
+    font-size: 3.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
