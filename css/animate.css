@@ -200,7 +200,7 @@
     60% {
       -webkit-transform: translateY(-20px);
               transform: translateY(-20px);
-      filter: brightness(120%) saturate(110%);
+      filter: brightness(120%);
     }
   }
   @keyframes fuyofuyo{
