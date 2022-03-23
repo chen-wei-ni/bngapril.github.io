@@ -14,8 +14,8 @@ $('.top_btn').hide();
 		$(window).scroll(function() {
 			var sh = $(window).scrollTop();
 			
-			if(sh > 1000) {
-				$('.top_btn').show(500);
+			if(sh > 800) {
+				$('.top_btn').show(500, 'swing');
 			}else {
 				$('.top_btn').hide(500, 'swing');
 			}
