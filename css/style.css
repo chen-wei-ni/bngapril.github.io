@@ -544,7 +544,7 @@ ul {
 /*-- language --*/
 .language-pack {
   position: fixed;
-  bottom: 6.6rem;
+  bottom: 6.7rem;
   right: 1rem;
   z-index: 100;
   opacity: 0.7;
@@ -574,8 +574,8 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   background: rgba(0, 0, 0, 0.6);
-  width: 80px;
-  height: 80px;
+  width: 82px;
+  height: 82px;
   border-radius: 50%;
   border: 2px solid #44e993;
   padding: .3rem;
@@ -652,8 +652,8 @@ ul {
 .top_btn p {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 82px;
+  height: 82px;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -1060,12 +1060,12 @@ ul {
     padding: 0;
   }
   .language-pack {
-    bottom: 5.5rem;
+    bottom: 5.7rem;
     right: .5rem;
   }
   .language-pack .language-icon {
-    width: 68px;
-    height: 68px;
+    width: 70px;
+    height: 70px;
     padding: 0;
   }
   .language-pack .language-icon .language {
@@ -1080,8 +1080,8 @@ ul {
     right: .5rem;
   }
   .top_btn p {
-    width: 68px;
-    height: 68px;
+    width: 70px;
+    height: 70px;
   }
 }
 
